@@ -4,7 +4,8 @@
   "description": "Assignment 3",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,8 @@
   "homepage": "https://github.com/Nosewall/COMP2537-Assignment-3#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "jsdom": "^16.5.3",
     "mysql": "^2.18.1",
     "nodemon": "^2.0.7",
     "redis": "^3.1.2",
