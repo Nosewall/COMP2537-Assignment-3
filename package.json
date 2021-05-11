@@ -1,0 +1,26 @@
+{
+  "name": "comp2537-assignment-3",
+  "version": "1.0.0",
+  "description": "Assignment 3",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nosewall/COMP2537-Assignment-3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nosewall/COMP2537-Assignment-3/issues"
+  },
+  "homepage": "https://github.com/Nosewall/COMP2537-Assignment-3#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.7",
+    "redis": "^3.1.2",
+    "session": "^0.1.0"
+  }
+}
