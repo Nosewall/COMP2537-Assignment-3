@@ -68,7 +68,37 @@ app.get('/profile', function(req, res) {
 
         // DIY templating with DOM, this is only the husk of the page
         let templateFile = fs.readFileSync('./static/templates/profile.html', "utf8");
-        res.send(templateFile);
+        let templateDOM = new JSDOM(templateFile);
+        let $template = require("jquery")(templateDOM.window);
+
+        // put the name in
+        //$template("#profile_name").html(req.session.email);
+
+        // insert the left column from a different file (or could be a DB or ad network, etc.)
+        let left = fs.readFileSync('./static/templates/content1.html', "utf8");
+        let leftDOM = new JSDOM(left);
+        let $left = require("jquery")(leftDOM.window);
+        // Replace! first content 1 is from profile, second is on content1
+        $template("#content1").replaceWith($left("#content1"));
+
+        // insert the left column from a different file (or could be a DB or ad network, etc.)
+        let middle = fs.readFileSync('./static/templates/content2.html', "utf8");
+        let middleDOM = new JSDOM(middle);
+        let $middle = require("jquery")(middleDOM.window);
+        // Replace!
+        $template("#content2").replaceWith($middle("#content2"));
+
+
+        // insert the left column from a different file (or could be a DB or ad network, etc.)
+        let right = fs.readFileSync('./static/templates/content3.html', "utf8");
+        let rightDOM = new JSDOM(right);
+        let $right = require("jquery")(rightDOM.window);
+        // Replace!
+        $template("#content3").replaceWith($right("#content3"));
+
+        res.set('Server', 'Wazubi Engine');
+        res.set('X-Powered-By', 'Wazubi');
+        res.send(templateDOM.serialize());
 
     } else {
         // not logged in - no session!
