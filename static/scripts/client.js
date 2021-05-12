@@ -1,6 +1,15 @@
 "use strict";
 
 $(document).ready(function () {
+
+    $('#audio').buttonAudioPlayer({
+        //It's CaramellDansen.
+        src: '/sound/Caramelldansen.mp3',
+        type: 'bar-animation',
+        loop: true,
+        loopStart: true
+    });
+
     $("#submit").click(function () {
         $.ajax({
             url: "/authenticate",

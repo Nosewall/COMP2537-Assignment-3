@@ -1,0 +1,133 @@
+body, html{
+  padding: 0%;
+  margin: 0%;
+  width: 100%;
+  height: 100%;
+  font-family: 'Emilys Candy';
+
+}
+body{
+  background-image: url("/images/bg.gif");
+  background-size: cover;
+}
+
+#login{
+  width:100%;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  margin: auto auto;
+}
+
+header{
+  font-weight:bold;
+  text-align: center;
+  background-color: rgba(93, 255, 233, 0.877);
+  border-radius: 60px;
+  border: 4px solid white;
+  width: 50%;
+  margin: auto auto;
+}
+
+main{
+  text-align: center;
+  background-color: rgba(255, 169, 255, 0.877);
+  border-radius: 60px;
+  border: 4px solid white;
+  width: 50%;
+  margin: auto auto;
+}
+
+footer{
+  font-size: 20px;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  background-color: rgba(234, 236, 78, 0.788);
+  border-radius: 60px;
+  border: 4px solid white;
+  width: 50%;
+  margin: auto auto;
+}
+
+header h1{
+  font-size: 50pt;
+}
+
+header p{
+  font-size: 25pt;
+}
+
+#content1{
+  font-family: 'Emilys Candy';
+  font-size: 25pt;
+  font-weight:bold;
+  text-align: center;
+  background-color: rgba(93, 255, 233, 0.877);
+  border-radius: 60px;
+  border: 4px solid white;
+  width: 70%;
+  margin: auto auto;
+}
+
+#content2{
+  font-size: 17pt;
+  font-family: 'Emilys Candy';
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-align: center;
+  background-color: rgba(255, 169, 255, 0.877);
+  border-radius: 60px;
+  border: 4px solid white;
+  width: 70%;
+  margin: auto auto;
+}
+
+#content3{
+  font-family: 'Emilys Candy';
+  font-size: 20px;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  background-color: rgba(234, 236, 78, 0.788);
+  border-radius: 60px;
+  border: 4px solid white;
+  width: 70%;
+  margin: auto auto;
+}
+
+.portrait{
+  font-family: 'Emilys Candy';
+  text-align: center;
+  display:flex;
+  flex-direction: column;
+  border-radius: 20px;
+  border: 3px solid white;
+  margin: 10px;
+}
+
+.portrait img{
+  width: 250px;
+  height: 250px;
+  border-radius: 20px;
+}
+
+#portraits{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#logout{
+  display:flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 70%;
+  border-radius: 20px;
+  color:white;
+  background-color: rgba(72, 243, 19, 0.651);
+  border: 4px solid white;
+}

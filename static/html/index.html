@@ -1,34 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <title>Reactive design</title>
-    <meta charset="utf-8"/>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
+<head>
+  <title>Soot Sleuth Party Page!</title>
+  <link rel="icon" href="images/star.png">
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/jquery-audio-button.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap" rel="stylesheet">
+</head>
 
 
-  <body>
+<body>
+  <div id="login">
 
-    <header></header>
+    <header>
+      <h1>Soot Sleuth Party Page!</h1>
+      <p>Nolan Nordwall, Kurt Fuoco, Spence Morrison, James An</p>
+
+    </header>
 
     <nav></nav>
 
     <main>
       <form id='loginForm'>
         <p id="formTitle">Welcome</p>
-        <input id='email' type='email' required="required" placeholder="Email"/>
-        <input id='password' type='password' required="required" placeholder="Password"/>
-        <input type="button" value="Login" id="submit"/>
+        <input id='email' type='email' required="required" placeholder="Email" />
+        <input id='password' type='password' required="required" placeholder="Password" />
+        <input type="button" value="Login" id="submit" />
         <p><span id="serverMsg"></span></p>
         <p id="forgotP"><a href="#">Forgot Login</a>?</p>
-        <p id="errorMsg">&nbsp;</p>
+        <p id="errorMsg"></p>
       </form>
     </main>
 
-    <footer></footer>
+    <footer>
+      <p>Let's boogie!</p>
+      <div id="audio"></div>
+    </footer>
+
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="scripts/client.js"></script>
-  </body>
+    <script src="scripts/jquery.button-audio-player.js"></script>
+  </div>
+</body>
 
 </html>
